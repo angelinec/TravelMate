@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.test.TravelMate.AddNewTrip$PlaceholderFragment"
+    android:background="#B2DFDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tripName"
+                android:id="@+id/tripName"
+                android:layout_weight="0.5"
+                style="@style/LabelText"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripNameInput"
+                android:layout_weight="2.5"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                style="@style/TextInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startDate"
+                android:id="@+id/startDateView"
+                android:layout_weight="0.5"
+                style="@style/LabelText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startDateInput"
+                android:id="@+id/startDateInput"
+                android:gravity="center"
+                android:layout_weight="2"
+                style="@style/TextOutput"/>
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setDate"
+                android:id="@+id/setStartDate"
+                android:padding="5dp"
+                android:layout_weight="0.5"
+                android:onClick="showStartDatePickerDialog"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/endDate"
+                android:id="@+id/endDateView"
+                android:layout_weight="0.5"
+                style="@style/LabelText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/endDateInput"
+                android:id="@+id/endDateInput"
+                android:gravity="center"
+                android:layout_weight="2"
+                style="@style/TextOutput"/>
+
+            <Button
+                style="@style/NormalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setDate"
+                android:id="@+id/setEndDate"
+                android:padding="5dp"
+                android:layout_weight="0.5"
+                android:onClick="showEndDatePickerDialog"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/destination"
+                android:id="@+id/destination"
+                android:layout_weight="0.5"
+                style="@style/LabelText"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/destinationInput"
+                android:layout_weight="2.5"
+                android:scrollbars="vertical"
+                android:maxLines="3"
+                style="@style/TextInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transport"
+                android:id="@+id/transport"
+                android:layout_weight="1.5"
+                style="@style/LabelText"/>
+
+
+            <TextView
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:text="Tap here to choose transport"
+                android:id="@+id/transportInput"
+                android:layout_weight="1.5"
+                style="@style/TextOutput"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saveTrip"
+                android:id="@+id/saveTrip"
+                android:onClick="saveTrip"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                style="@style/FooterBtn"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

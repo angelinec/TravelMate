@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test.TravelMate.ViewTrip"
+    android:background="#B2DFDB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="10dp" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editUpdate"
+                android:text="@string/editUpdateTrip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                style="@style/NormalBtn"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripDate"
+                    android:text="From"
+                    android:layout_weight="1"
+                    style="@style/LabelText"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/startDateOutput"
+                    android:hint="Start Date Output"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    style="@style/TextInput"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripEndDate"
+                    android:text="Until"
+                    android:layout_weight="1"
+                    style="@style/LabelText"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/endDateOutput"
+                    android:hint ="End date output"
+                    android:focusable="false"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    style="@style/TextInput"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:id="@+id/tripDestination"
+                    android:text="Destination"
+                    android:layout_weight="0.5"
+                    style="@style/LabelText"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/destinationOutput"
+                    android:hint ="Destination output"
+                    android:focusable="false"
+                    android:layout_weight="1.5"
+                    android:paddingLeft="5dp"
+                    style="@style/TextInput"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tripTransport"
+                    android:text="Transport"
+                    android:layout_weight="0.5"
+                    style="@style/LabelText"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/transportOutput"
+                    android:layout_weight="1.5"
+                    android:clickable="false"
+                    android:paddingLeft="5dp"
+                    style="@style/TextOutput"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/viewItin"
+                    android:text="Itineraries"
+                    style="@style/NormalBtn"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/viewCheckList"
+                    android:text="Checklist"
+                    style="@style/NormalBtn"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/viewJournal"
+                    android:text="Journals"
+                    style="@style/NormalBtn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+</ScrollView>

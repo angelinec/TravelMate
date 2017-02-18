@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.test.TravelMate.AddNewTrip" tools:ignore="MergeRootFrame"
+    android:background="#B2DFDB">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        style="@style/MyToolBar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/foodLegend"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/orange_dot"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_alignTop="@+id/mapTypeBtn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Restaurants"
+                    android:id="@+id/foodText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/cafeLegend"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ltblue_dot"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_alignTop="@+id/foodLegend"
+                    android:layout_toRightOf="@+id/foodLegend"
+                    android:layout_toEndOf="@+id/foodLegend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Cafes"
+                    android:id="@+id/cafeText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="85dp"/>
+
+                <ImageView
+                    android:id="@+id/mallsLegend"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/green_dot"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_alignTop="@+id/cafeLegend"
+                    android:layout_toRightOf="@+id/cafeLegend"
+                    android:layout_toEndOf="@+id/cafeLegend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Malls"
+                    android:id="@+id/mallsText"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/cafeText"
+                    android:layout_marginLeft="25dp"/>
+
+                <Button
+                    android:id="@+id/mapTypeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text="SATELLITE MODE"
+                    style="@style/NormalBtn"/>
+
+            </RelativeLayout>
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/placesTag"
+                        android:text="Places Nearby"
+                        android:layout_weight="1"
+                        style="@style/LabelText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/diningBtn"
+                        android:text="Dining"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:layout_weight="1"
+                        style="@style/NormalBtn"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/shopMallBtn"
+                        android:text="MALLS"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="8dp"
+                        android:paddingLeft="1dp"
+                        android:paddingRight="1dp"
+                        android:layout_weight="1"
+                        style="@style/NormalBtn"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/allPlaces"
+                        android:text="All Nearby Places"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:layout_weight="1"
+                        style="@style/NormalBtn"/>
+
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="10dp">
+
+               <TextView
+                   android:id="@+id/placeName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   style="@style/TextOutput"/>
+
+               <TextView
+                   android:id="@+id/placeAddress"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   style="@style/TextOutput"/>
+
+               <TextView
+                   android:id="@+id/placePhone"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   style="@style/TextOutput"/>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

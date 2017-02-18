@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TravelMate</string>
+    <string name="home">Home</string>
+    <string name="itin_Chklist">Itineraries</string>
+    <string name="journal">Journals</string>
+    <string name="places">Nearby Places</string>
+    <string name="share">Share</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="add_trip">Add New Trip</string>
+    <string name="action_settings">Settings</string>
+    <string name="tripName">Trip Name</string>
+    <string name="startDate">Start date</string>
+    <string name="endDate">End date</string>
+    <string name="destination">Destination</string>
+    <string name="transport">Transport</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tripNameInput">trip name goes here</string>
+    <string name="transportInput">place goes here</string>
+    <string name="saveTrip">Save</string>
+    <string name="startDateInput">No date set</string>
+    <string name="endDateInput">No date set</string>
+    <string name="setDate">Set Date</string>
+    <string name="addTripBtn">Add New Trip</string>
+    <string name="title_activity_view">View</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="editUpdateTrip">Edit</string>
+    <string name="title_activity_view_itin">View Itinerary</string>
+    <string name="title_activity_view_chklist">View Checklist</string>
+    <string name="title_activity_view_journal">View Journal</string>
+    <string name="title_activity_view_journal_list">List of Journals</string>
+
+    <string-array name="transportType_array">
+        <item> Bus </item>
+        <item> Car </item>
+        <item> Flight </item>
+        <item> Train </item>
+        <item> Cruise ship </item>
+    </string-array>
+    <string-array name="transportTypeSel_array">
+        <item> Bus </item>
+        <item> Car </item>
+        <item> Flight </item>
+        <item> Train </item>
+        <item> Cruise ship </item>
+    </string-array>
+
+    <string name="title_activity_add_itin">Add Itinerary</string>
+    <string name="title_activity_journal_list">List of Journals</string>
+    <string name="title_activity_add_journal">Add Journal</string>
+    <string name="title_activity_sharing">Sharing</string>
+    <string name="title_activity_journals">Journals</string>
+    <string name="title_activity_add_new_trip">Add New Trip</string>
+    <string name="title_activity_itineraries">Itineraries</string>
+    <string name="title_activity_view_itin_list">Itinerary List</string>
+    <string name="title_activity_add_itinerary">Add Itinerary</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dateInputHint">Tap to select date</string>
+
+</resources>
