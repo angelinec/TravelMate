@@ -17,7 +17,7 @@ This is an almost 2-year-old prototype app that is no longer maintained. Last so
 
 Certain functionalities require a Google API key to work. I have removed my personal API key. Therefore, please insert your own API key in the AndroidManifest.xml file if you wish to test those functionalities.
 
-Specifically in this section:
+Specifically within this section in AndroidManifest.xml:
 ```
             <meta-data
               android:name="com.google.android.geo.API_KEY"
